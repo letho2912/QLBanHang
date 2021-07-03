@@ -1,0 +1,420 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+	font-family: "Roboto",sans-serif;
+}
+/*hình ảnh hiển thị*/
+.flexbox {
+	margin: 0 auto;
+	display: flex;
+	width: 87%;
+}
+
+.hinhanh {
+	color: white;
+	height: auto;
+	width: 380px;
+	margin: 15px 15px 10px;
+}
+/*Sản phẩm nổi bật và danh mục*/
+.main {
+	display: flex;
+	width: 84%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.mainContent {
+	flex-grow: 3;
+	margin-left: 10px;
+	width: 64%;
+}
+
+.productNew {
+	display: flex;
+	margin-left: 13px;
+	flex-wrap: wrap;
+}
+
+.productEx {
+	height: auto; 
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	margin: 0px 8px 10px;
+	width: 255px;
+}
+.imgNoibat{
+	width: 93%;
+	padding: 15px 5px 5px;
+}
+.tenSP{
+	font-weight: bold;
+	margin-top:5px;
+	text-align: center;
+}
+.gia{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.giaSP{
+	margin-right:8px;
+	color:#00CC33;
+}
+
+.title_new {
+	border-bottom: 1px solid #e1e1e1;
+	/*margin: 0 0px 2px 0;*/
+	margin-left: 15px;
+	line-height: 42px;
+	margin-top: auto;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
+/*Danh mục*/
+.menu {
+	background-color: #FFFFFF;
+	width: 23%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	/*z-index: 1;*/
+	height:400px;
+}
+
+
+
+
+@media screen and (max-width: 1069px) {
+	.menu h2 {
+		font-size: 15px;
+		line-height: 37px;
+	}
+	.menu {
+		width: 27%;
+	}
+	
+	.title_new, .title_living {
+		line-height: 37px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.menu {
+		display: none;
+	}
+	.mainContent {
+		margin-left: 0px;
+	}
+}
+
+.menu h2 {
+	background: #3ab54a;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+#menu ul {
+	width: auto;
+	padding: 0;
+	margin-top: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+#menu li {
+	width: auto;
+	height: 40px;
+	padding: 0 1em;
+	line-height: 40px;
+	font-family: inherit;
+	font-size: 15px;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+}
+
+#menu li a:hover {
+	color: #3ab54a;
+}
+
+#menu ul li {
+	position: relative;
+}
+
+#menu .sub-menu {
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 250px;
+	border: 1px solid #e8e8e8;
+	top: 0;
+	display: none;
+	width: 200px;
+	text-transform: none;
+}
+
+#menu li:hover .sub-menu {
+	display: block;
+}
+/*Nội thất phòng khách phòng ngủ*/
+.productMain {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 84%;
+}
+
+.title_living {
+	border-bottom: 1px solid #e1e1e1;
+	line-height: 42px;
+	margin-top: auto;
+	margin-left: 10px; color : #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+}
+
+.productLiving {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+
+.productHouse {
+	display:block;
+	color: white;
+	height: 280px;
+	width: 275px;
+	margin: 0px 15px 10px;
+}
+
+.product {
+	background-color: white;
+	height: auto;
+	width: 252px;
+	margin: 0px 8px 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.product1 {
+	background-color: white;
+	height: auto;
+	width: 240px;
+margin: 0px 8px 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);}
+@media screen and(max-width:1323px){
+	.product{
+	width:220px;
+	}
+	.product1{
+	width: 170px;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+	.mainContent {
+		margin-left: 0px;
+	}
+	.productEx{
+	width: 300px;
+    height: auto;
+	}
+	.product{
+	width: 300px;
+    height: auto;
+	}
+	.productHouse{
+	display: none;
+	}
+	.product1{
+	width:300px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.menu {
+		display: none;
+	}
+	.mainContent {
+		margin-left: 0px;
+	}
+	.product{
+	width: 230px;
+	}
+	.productEx{
+	width: 230px;
+    height: auto;
+	}
+	.productHouse {
+	display: none;
+	}
+	.product1{
+	width: 225px;
+	}
+}
+/*Tư vấn*/
+.imgTV {
+	height: 220px;
+	width: 100%;
+	background-image: url(../img/tuvan.jpg);
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+.nen {
+	padding-top: 50px; padding-right : 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+}
+
+.textTV {
+	color: #00ff00;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+}
+
+.textMall {
+	color: white;
+	font-size: 15px;
+}
+
+.emailDk {
+	background-color: #00CC33;
+}
+/*phần giới thiệu nhỏ*/
+/*Phần nút*/
+.nut{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.detail a{
+	text-decoration: none;
+	color:white;
+}
+a{
+	text-decoration: none;
+}
+.detail {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #999999;
+  font-weight: 600;
+  color:white;
+  margin-right:10px;
+}
+.detail:hover {
+  background: #00CC33;
+}
+
+.cart a{
+	text-decoration: none;
+	color:white;
+}
+.cart {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #999999;
+  font-weight: 600;
+  color:white;
+  border:none;
+}
+.cart:hover {
+  background: #00CC33;
+}
+/*footer*/
+.footer {
+	width: 100%;
+	background-color: #111111;
+}
+
+.footer-main {
+	display: flex;
+	padding: 15px 55px;
+}
+
+.footer-1 {
+	width: 32%;
+	margin-right: auto;
+	position: relative;
+	padding-left: 25px;
+}
+
+.footer-2 {
+	width: 20%;
+	margin-right: auto;
+}
+
+.footer-3 {
+	width: 20%;
+	margin-right: auto;
+}
+
+.footer-4 {
+	width: 20%;
+	margin-right: auto;
+}
+
+.ttlh {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: white;
+	font-weight: 600;
+}
+
+.d1 {
+	margin-top: 15px;
+	color: white;
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+.cty {
+	color: white;
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.d2 {
+	color: white;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.d2 a {
+	color: white;
+}
+
+.mxh {
+	font-size: 32px;
+	margin-top: 20px;
+}
+.mxh a{
+	color: white;
+}
+
+
